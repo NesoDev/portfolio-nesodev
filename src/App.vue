@@ -42,14 +42,22 @@
         </div>
       </div>
       <nav class="header" id="header-bottom">
-        <li>About</li>
-        <li>Tools</li>
-        <li>Projects</li>
-        <li>Certificates</li>
+        <router-link to="/" class="menu-button">
+          <li>About</li>
+        </router-link>
+        <router-link to="/" class="menu-button">
+          <li>Tools</li>
+        </router-link>
+        <router-link to="/" class="menu-button">
+          <li>Projects</li>
+        </router-link>
+        <router-link to="/" class="menu-button">
+          <li>Certificates</li>
+        </router-link>
       </nav>
     </div>
     <div id="body">
-
+        <router-view></router-view>
     </div>
   </div>
 </template>
@@ -61,7 +69,7 @@
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 40px;
 }
 
 #header {
