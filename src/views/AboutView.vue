@@ -21,14 +21,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
 
 const pRef = ref(null);
 const bgH = ref(0);
 
 // Función para actualizar la altura
 const updateHeight = () => {
-    if (pRef.value) {
+    if (pRef.value && bgH.value) {
         bgH.value = pRef.value.offsetHeight + 24;
     }
 };
@@ -145,8 +145,6 @@ watchEffect(() => {
     width: 100%;
     min-width: 230px;
     /*box-shadow: inset 0 0 0 1px rgb(247, 0, 255);*/
-
-
     font-family: "Fira Code", sans-serif;
     font-weight: lighter;
     font-size: 11px;
