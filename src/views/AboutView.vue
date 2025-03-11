@@ -24,11 +24,11 @@
 import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
 
 const pRef = ref(null);
-const bgH = ref(0);
+const bgH = ref(72);
 
 // Función para actualizar la altura
 const updateHeight = () => {
-    if (pRef.value && bgH.value) {
+    if (pRef.value) {
         bgH.value = pRef.value.offsetHeight + 24;
     }
 };
