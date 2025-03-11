@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
 
 const pRef = ref(null);
 const bgH = ref(0);
