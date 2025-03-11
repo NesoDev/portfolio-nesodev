@@ -110,6 +110,9 @@ watchEffect(() => {
 }
 /* Media query para desktop (por ejemplo, pantallas de 1024px en adelante) */
 @media (min-width: 1024px) {
+    #presentation {
+        gap: 14px
+    }
     #greeting span, #greeting h1 {
     font-size: 30px;
   }
