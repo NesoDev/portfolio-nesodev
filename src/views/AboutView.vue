@@ -21,29 +21,42 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
 
 const pRef = ref(null);
-const bgH = ref(72);
+const bgH = ref(0);
 
 // Función para actualizar la altura
 const updateHeight = () => {
     if (pRef.value) {
         bgH.value = pRef.value.offsetHeight + 24;
+        console.log("Altura calculada:", bgH.value);
     }
 };
 
+// Observar cambios en la altura del elemento
 onMounted(() => {
-    updateHeight();
-    window.addEventListener('resize', updateHeight);
+    const observer = new ResizeObserver(() => {
+        updateHeight();
+    });
+
+    if (pRef.value) {
+        observer.observe(pRef.value); // Observar el elemento referenciado
+    }
+
+    // Limpiar el observer al desmontar el componente
+    onUnmounted(() => {
+        if (pRef.value) {
+            observer.unobserve(pRef.value);
+        }
+    });
 });
 
-onUnmounted(() => {
-    window.removeEventListener('resize', updateHeight);
-});
-
-watchEffect(() => {
-    updateHeight();
+// Usar watch para vigilar cambios en pRef (opcional)
+watch(pRef, (newValue) => {
+    if (newValue) {
+        updateHeight();
+    }
 });
 </script>
 
