@@ -132,7 +132,7 @@ onBeforeMount(() => {
   width: 100%;
   height: 20px;
   box-sizing: border-box;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 12px 0px 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -208,6 +208,6 @@ onBeforeMount(() => {
 #body {
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 0 1px red;
+  /*box-shadow: inset 0 0 0 1px red;*/
 }
 </style>
