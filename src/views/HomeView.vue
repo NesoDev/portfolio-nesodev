@@ -45,19 +45,19 @@
                   </defs>
                 </svg>
               </a>
-              
+
               <a href="https://www.linkedin.com/in/avendano-meza-ever-frank/">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="25" height="25" fill="url(#pattern0_13_93)" />
-                <defs>
-                  <pattern id="pattern0_13_93" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_13_93" transform="scale(0.0104167)" />
-                  </pattern>
-                  <image id="image0_13_93" width="96" height="96" preserveAspectRatio="none"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADpUlEQVR4nO2dTU8UQRCGR6NRIxr1qOLNxH/hx82of0HURP+BX2iyF+OduB6A3aoBw4VEQTB60j1ocKtA8UAicgT1ior3McVC1IRlZ5fdqWHmfZK6kJ3O1vt2d/XMDt1BAAAAAAAAAAAAAABAk4yMvD1cLutVZhlnlnki+c2sURaCVnOxnHTMcrRcU9NBRken9hHpXWb54S0UJ2fIMrPcYa7sdRW/VPpwlFnUWxB2M0Jnh4ZmTniKv+gtAruHLJoWiU87zDrtn7ymIohEEp2OmOWed9KcsiCS24mIbyuAPBVcjm/AciKrIyK95p0spzbkShIGjPknqikNedpxA5h1wT9RTWnIfAIGyIp/oprSkJUEDPBOUlMdMIBhgHsvZIyATefJ8XJZTw8Pf9pvwTx9hlkmvIXLxRS02d0ikfZ6i5dxA2Q8RtuT3gJm1gCbdhq1HYbVs94CZtaAYnGuq1HbpdK7A94C5tqAJ0+qB70FzKwBttpp1DZR9Zy3gBk2QCYaG6AvvAXMsAGrv6H21hdf7nuLl3kD1mLSVjtWE4rFuS6bdrLQ87eTAZmOAAYoDPDuhYwR4C8EYwr6XwQrtGE4dazeFDkwUD1OJC/bc529MCaPwlDPE70/+ffJ68yp2t+kyKxLuaoBJlSjtom0e4vXLTHL9f7+md2NrikUKrvss8zyLRcGtNp+EPs6mRgcnDrSbD6150/t+z0iyKsBURTtaDWnQiHaaVMWDAhaN2CrmAlE8hwjgH0MWH8aSyTfMQWxjwFGGOoNGMB+BtjqiEi/oghzawYQ6SUiqdj/ddVC35TLcrGZNpjlMQzg5g1glof1hCPSB/HbqV6AAdycAdbzG4kWdyTYHTMM4GYNkEoM0V7HaWsrLwcEeb0R43hvbf9KS54ZNEA7+j1gQANgAEZAhCmIMQWhBnQaFGHFKmgjUIRRhCMUYUYRRhHuNCjCiiK8ESjCKMIRijCjCKMI5/zVxKhT32PbP462F2g3S55Iu4n0Vbuua/f32PYG5CUCGKAwwLsXcrZHALYs4zriE+nPjhtApF+8exmnNIjkcxIGYNtKdty2snZGgH9v4xRGGFYvd9wA2563tn++f8KcoqhpMnsoSILagQ3+SXO64maQFLZVe54PbmDv7esNHOCgfgc4/GtCzf3c9vyPbkeYrGNDz7ajzFNhptVcq7f6+hb2BGnBVgBE0kOkz+yGJFt3zLJiOa3l1pPYagcAAAAAAAAAAAAABFniDyuNz1xwI+ybAAAAAElFTkSuQmCC" />
-                </defs>
-              </svg>
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="25" height="25" fill="url(#pattern0_13_93)" />
+                  <defs>
+                    <pattern id="pattern0_13_93" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_13_93" transform="scale(0.0104167)" />
+                    </pattern>
+                    <image id="image0_13_93" width="96" height="96" preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADpUlEQVR4nO2dTU8UQRCGR6NRIxr1qOLNxH/hx82of0HURP+BX2iyF+OduB6A3aoBw4VEQTB60j1ocKtA8UAicgT1ior3McVC1IRlZ5fdqWHmfZK6kJ3O1vt2d/XMDt1BAAAAAAAAAAAAAABAk4yMvD1cLutVZhlnlnki+c2sURaCVnOxnHTMcrRcU9NBRken9hHpXWb54S0UJ2fIMrPcYa7sdRW/VPpwlFnUWxB2M0Jnh4ZmTniKv+gtAruHLJoWiU87zDrtn7ymIohEEp2OmOWed9KcsiCS24mIbyuAPBVcjm/AciKrIyK95p0spzbkShIGjPknqikNedpxA5h1wT9RTWnIfAIGyIp/oprSkJUEDPBOUlMdMIBhgHsvZIyATefJ8XJZTw8Pf9pvwTx9hlkmvIXLxRS02d0ikfZ6i5dxA2Q8RtuT3gJm1gCbdhq1HYbVs94CZtaAYnGuq1HbpdK7A94C5tqAJ0+qB70FzKwBttpp1DZR9Zy3gBk2QCYaG6AvvAXMsAGrv6H21hdf7nuLl3kD1mLSVjtWE4rFuS6bdrLQ87eTAZmOAAYoDPDuhYwR4C8EYwr6XwQrtGE4dazeFDkwUD1OJC/bc529MCaPwlDPE70/+ffJ68yp2t+kyKxLuaoBJlSjtom0e4vXLTHL9f7+md2NrikUKrvss8zyLRcGtNp+EPs6mRgcnDrSbD6150/t+z0iyKsBURTtaDWnQiHaaVMWDAhaN2CrmAlE8hwjgH0MWH8aSyTfMQWxjwFGGOoNGMB+BtjqiEi/oghzawYQ6SUiqdj/ddVC35TLcrGZNpjlMQzg5g1glof1hCPSB/HbqV6AAdycAdbzG4kWdyTYHTMM4GYNkEoM0V7HaWsrLwcEeb0R43hvbf9KS54ZNEA7+j1gQANgAEZAhCmIMQWhBnQaFGHFKmgjUIRRhCMUYUYRRhHuNCjCiiK8ESjCKMIRijCjCKMI5/zVxKhT32PbP462F2g3S55Iu4n0Vbuua/f32PYG5CUCGKAwwLsXcrZHALYs4zriE+nPjhtApF+8exmnNIjkcxIGYNtKdty2snZGgH9v4xRGGFYvd9wA2563tn++f8KcoqhpMnsoSILagQ3+SXO64maQFLZVe54PbmDv7esNHOCgfgc4/GtCzf3c9vyPbkeYrGNDz7ajzFNhptVcq7f6+hb2BGnBVgBE0kOkz+yGJFt3zLJiOa3l1pPYagcAAAAAAAAAAAAABFniDyuNz1xwI+ybAAAAAElFTkSuQmCC" />
+                  </defs>
+                </svg>
               </a>
             </div>
             <!--<div class="h-u-rigth" id="options"></div>-->
@@ -65,17 +65,17 @@
         </div>
         <!-- Barra inferior (enlaces de navegación) -->
         <nav class="header" id="header-bottom">
-          <router-link to="/about" class="link-nav" :class="{ 'active': $route.path === '/about' }">
-            About Me
+          <router-link to="/about" class="link-nav" :class="{ 'active': $route.path.startsWith('/about') }">
+            <p>About Me</p>
           </router-link>
           <router-link to="/tools" class="link-nav" :class="{ 'active': $route.path === '/tools' }">
-            Tools
+            <p>Tools</p>
           </router-link>
           <router-link to="/projects" class="link-nav" :class="{ 'active': $route.path === '/projects' }">
-            Projects
+            <p>Projects</p>
           </router-link>
           <router-link to="/certificates" class="link-nav" :class="{ 'active': $route.path === '/certificates' }">
-            Certificates
+            <p>Certificates</p>
           </router-link>
         </nav>
       </div>
@@ -89,13 +89,6 @@
 
 <script setup>
 import Background from '@/components/BackgroundComponent.vue';
-import { useRouter } from 'vue-router';
-import { onBeforeMount } from 'vue';
-
-const router = useRouter()
-onBeforeMount(() => {
-  router.push("/about")
-})
 </script>
 
 
@@ -119,7 +112,7 @@ onBeforeMount(() => {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 /* ////////////////////////// Cabecera ////////////////////////// */
@@ -130,7 +123,7 @@ onBeforeMount(() => {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 30px
+  gap: 20px
 }
 
 /* ///////////// Barra superior ///////////// */

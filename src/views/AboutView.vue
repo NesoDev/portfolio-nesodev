@@ -20,7 +20,8 @@
         <div id="more">
             <div id="bar-up">
                 <div id="dropdown-more-me" ref="dropdownRef">
-                    <button id="btn-more-me" :class="openedDropdown ? 'btn-more-selected' : 'btn-more-deselected'" @click="handleDropDown">
+                    <button id="btn-more-me" :class="openedDropdown ? 'btn-more-selected' : 'btn-more-deselected'"
+                        @click="handleDropDown">
                         <p>More me</p>
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L4.29289 4.29289C4.68342 4.68342 5.31658 4.68342 5.70711 4.29289L9 1"
@@ -28,7 +29,7 @@
                         </svg>
                     </button>
                     <div id="options" ref="optsRef">
-                        <router-link to="/about/started" class="link-nav" @click="handleDropDown" 
+                        <router-link to="/about/started" class="link-nav" @click="handleDropDown"
                             :class="{ 'active': $route.path === '/about/started' }">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -149,14 +150,6 @@ const dropdownRef = ref(null);
 const optsRef = ref(null);
 const openedDropdown = ref(false);
 
-// Función para actualizar la altura
-const updateHeight = () => {
-    if (pRef.value) {
-        bgH.value = pRef.value.offsetHeight + 24;
-        console.log("Altura calculada:", bgH.value);
-    }
-};
-
 // Observar cambios en la altura del elemento
 onMounted(() => {
     const observer = new ResizeObserver(() => {
@@ -175,6 +168,14 @@ onMounted(() => {
     });
 });
 
+// Función para actualizar la altura
+const updateHeight = () => {
+    if (pRef.value) {
+        bgH.value = pRef.value.offsetHeight + 24;
+        console.log("Altura calculada:", bgH.value);
+    }
+};
+
 // Usar watch para vigilar cambios en pRef (opcional)
 watch(pRef, (newValue) => {
     if (newValue) {
@@ -182,9 +183,9 @@ watch(pRef, (newValue) => {
     }
 });
 
-const handleDropDown = () => { 
+const handleDropDown = () => {
     openedDropdown.value = !openedDropdown.value;
-    
+
     if (openedDropdown.value) {
         optsRef.value.classList.remove("options-hidden");
         optsRef.value.classList.add("options-showed");
@@ -194,9 +195,11 @@ const handleDropDown = () => {
     }
 };
 document.addEventListener('click', (event) => {
-    if (!dropdownRef.value.contains(event.target)) {
-        if (openedDropdown.value) {
-            handleDropDown()
+    if (dropdownRef.value) {
+        if (!dropdownRef.value.contains(event.target)) {
+            if (openedDropdown.value) {
+                handleDropDown()
+            }
         }
     }
 });
@@ -213,7 +216,7 @@ document.addEventListener('click', (event) => {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 26px;
+    gap: 30px;
 }
 
 /* ////////////////////////// Sección "Presentation" ////////////////////////// */
@@ -425,20 +428,24 @@ hr {
 
 /* Estado cuando el menú está ABIERTO */
 .btn-more-selected {
-    border-radius: 8px 8px 0 0 !important; /* Fuerza esquinas superiores redondeadas */
-    background: #A4A9D2 !important; /* Color cuando está activo */
+    border-radius: 8px 8px 0 0 !important;
+    /* Fuerza esquinas superiores redondeadas */
+    background: #A4A9D2 !important;
+    /* Color cuando está activo */
 }
 
 /* Estado cuando el menú está CERRADO */
 .btn-more-deselected {
-    border-radius: 8px !important; /* Redondeo completo */
+    border-radius: 8px !important;
+    /* Redondeo completo */
 }
 
 #btn-more-me p {
     margin-bottom: 3px;
 }
 
-#btn-more-me:hover, .btn-selected {
+#btn-more-me:hover,
+.btn-selected {
     background: #A4A9D2;
 }
 
@@ -462,8 +469,10 @@ hr {
 }
 
 #options svg {
-    transform: translateZ(0); /* Fuerza aceleración por hardware */
-    backface-visibility: hidden; /* Optimiza renderizado */
+    transform: translateZ(0);
+    /* Fuerza aceleración por hardware */
+    backface-visibility: hidden;
+    /* Optimiza renderizado */
 }
 
 .options-showed {
@@ -518,12 +527,13 @@ hr {
     font-family: "M PLUS 2", sans-serif;
     font-size: 0.8125em;
     color: #636380;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, border-rdius 0.2 ease;
 }
 
 #options a:hover,
 .link-nav.active {
-    background: #111118;
+    background: #0C0C11;
+    border-radius: 4px;
 }
 
 #options .link-nav p {
@@ -553,7 +563,7 @@ hr {
     font-size: 13px;
     font-weight: normal;
     border: none;
-    transition: background 0.4s ease,;
+    transition: background 0.4s ease, ;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
@@ -596,6 +606,5 @@ hr {
 #content-more {
     width: 100%;
     height: 100%;
-    box-shadow: inset 0 0 0 1px rgb(0, 102, 255);
 }
 </style>
