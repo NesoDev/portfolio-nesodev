@@ -56,7 +56,7 @@
                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABxUlEQVR4nO2dvU7DMBRGLwxIPGBewN+D+G50QUIICR4QBBOwMBtF7daWoY37keQcKUuH2s2JfX8U1REAAAAAAAAwD2qt1xFx5Z7H6hiG+9tS6lMp9VvKxpXjPXiT6mYY6k13AVJ94KbnkQevbroLKKV+ICCPrfz37gK4+fnntosAeeMSAoSAiz4xMj2xi1kBYZ7P1OOe+3tOHhgBiQCxAtiCgi0oiQEE4Y4QhLeQBe0gDSUNbdQBohCjEBOFWKMQoxBr0ZtLNbU0k2bev2nGTf19QgACxApItiC2oCQGiCBMEBZZUJKGkoYmdYAoxCjERCWctCJoRSS9INGMoxknuqHnsZh29FzbyTHxuOf+npMHRkAiQKwAtqBgC0piAEG4IwThLWRBO0hDSUMbdYAoxCjERCHWKMQoxFr0hjR0YWmoFnYhQAiwP4ViBaz1qq9sQfIJKCXvEKDF/23l4Ul0Hxi2IMAMAswgwAwCzCDADALMIMAMAswgwAwCzCDADALMIMAMAswgwAwCzCDADALMIMAMAsxI+bX/Okb9dM9rNYwnqR54IenRPa+1HWf7Ukr+jJeUz+Nn7nmtkfEwZw50BgAAgJglv2NOSkmon4ZWAAAAAElFTkSuQmCC" />
                             </defs>
                         </svg>
-                        How is started
+                        <p>How is started</p>
                     </router-link>
                     <hr>
                     <router-link>
@@ -72,7 +72,7 @@
                                     xlink:href="data:image/png;base64,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" />
                             </defs>
                         </svg>
-                        Education
+                        <p>Education</p>
                     </router-link>
                     <hr>
                     <router-link>
@@ -89,7 +89,7 @@
                             </defs>
                         </svg>
 
-                        Movies & series
+                       <p> Movies & series</p>
                     </router-link>
                     <hr>
                     <router-link>
@@ -106,7 +106,7 @@
                             </defs>
                         </svg>
 
-                        Musics
+                       <p> Musics</p>
                     </router-link>
                     <hr>
                     <router-link>
@@ -122,7 +122,7 @@
                                     xlink:href="data:image/png;base64,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" />
                             </defs>
                         </svg>
-                        Games
+                        <p>Games</p>
                     </router-link>
                 </div>
             </div>
