@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
+import StartedView from '@/views/AboutViews/StartedView.vue'
+import MoviesSeriesView from '@/views/AboutViews/MoviesSeriesView.vue'
+import MusicsView from '@/views/AboutViews/MusicsView.vue'
+import GamesView from '@/views/AboutViews/GamesView.vue'
 import ToolsView from '@/views/ToolsView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import CertificatesView from '@/views/CertificatesView.vue'
@@ -14,7 +18,29 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'about',
         name: 'about',
-        component: AboutView
+        component: AboutView,
+        children: [
+          {
+            path: 'started',
+            name: 'started',
+            component: StartedView
+          },
+          {
+            path: 'movies&series',
+            name: 'movies&series',
+            component: MoviesSeriesView
+          },
+          {
+            path: 'musics',
+            name: 'musics',
+            component: MusicsView
+          },
+          {
+            path: 'games',
+            name: 'games',
+            component: GamesView
+          }
+        ]
       },
       {
         path: 'tools',

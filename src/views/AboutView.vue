@@ -43,7 +43,7 @@
                     </button>
                 </div>
                 <div id="options">
-                    <router-link>
+                    <router-link to="/started" class="link-nav" :class="{ 'active': $route.path === '/started' }">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="14" height="14" fill="url(#pattern0_13_115)" />
@@ -59,7 +59,7 @@
                         <p>How is started</p>
                     </router-link>
                     <hr>
-                    <router-link>
+                    <router-link to="/education" class="link-nav" :class="{ 'active': $route.path === '/education' }">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="14" height="14" fill="url(#pattern0_207_4)" />
@@ -75,7 +75,7 @@
                         <p>Education</p>
                     </router-link>
                     <hr>
-                    <router-link>
+                    <router-link to="/movies&series" class="link-nav" :class="{ 'active': $route.path === '/movies&series' }">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="14" height="14" fill="url(#pattern0_208_6)" />
@@ -92,7 +92,7 @@
                        <p> Movies & series</p>
                     </router-link>
                     <hr>
-                    <router-link>
+                    <router-link to="/musics" class="link-nav" :class="{ 'active': $route.path === '/musics' }">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="14" height="14" fill="url(#pattern0_208_8)" />
@@ -109,7 +109,7 @@
                        <p> Musics</p>
                     </router-link>
                     <hr>
-                    <router-link>
+                    <router-link to="/games" class="link-nav" :class="{ 'active': $route.path === '/games' }">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="14" height="14" fill="url(#pattern0_208_14)" />
@@ -462,7 +462,7 @@ hr {
 
 #options {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     top: 29px;
     left: 0px;
     width: auto;
