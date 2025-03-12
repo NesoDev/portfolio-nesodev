@@ -8,6 +8,7 @@ import GamesView from '@/views/AboutViews/GamesView.vue'
 import ToolsView from '@/views/ToolsView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import CertificatesView from '@/views/CertificatesView.vue'
+import EducationView from '@/views/AboutViews/EducationView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
             path: 'started',
             name: 'started',
             component: StartedView
+          },
+          {
+            path: 'education',
+            name: 'education',
+            component: EducationView
           },
           {
             path: 'movies&series',
