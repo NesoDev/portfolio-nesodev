@@ -462,6 +462,7 @@ hr {
 
 #options {
     position: absolute;
+    z-index: 3;
     top: 29px;
     left: 0px;
     width: auto;
@@ -502,7 +503,7 @@ hr {
     color: #111118;
 }
 
-#content {
+#content-more {
     width: 100%;
     height: 100%;
     box-shadow: inset 0 0 0 1px rgb(0, 102, 255);
