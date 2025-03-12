@@ -126,7 +126,7 @@
                     </router-link>
                 </div>
             </div>
-            <div id="content"></div>
+            <div id="content-more"></div>
         </div>
     </div>
 </template>
