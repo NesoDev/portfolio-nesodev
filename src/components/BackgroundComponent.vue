@@ -29,7 +29,8 @@ onMounted(() => {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #620743 0%, #000000 8%);
+    /*background: linear-gradient(to bottom, #620743 0%, #000000 8%);*/
+    background: #000;
   }
 }
 </style>
