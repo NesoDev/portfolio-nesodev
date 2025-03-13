@@ -96,19 +96,21 @@ import Background from '@/components/BackgroundComponent.vue';
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 .home {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  padding: 21px 0;
 }
 
 #content {
-  position: absolute;
-  z-index: 2;
   width: 600px;
   max-width: 100%;
-  height: 95%;
+  height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +120,7 @@ import Background from '@/components/BackgroundComponent.vue';
 /* ////////////////////////// Cabecera ////////////////////////// */
 #header {
   width: 100%;
-  height: auto;
+  height: 85px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

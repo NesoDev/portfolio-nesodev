@@ -213,6 +213,7 @@ document.addEventListener('click', (event) => {
     height: 100%;
     /*box-shadow: inset 0 0 0 1px #fff;*/
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -330,6 +331,7 @@ document.addEventListener('click', (event) => {
     font-weight: lighter;
     font-size: 11px;
     color: #636380;
+    line-height: 1.8
 }
 
 #profile #avatar {
@@ -370,6 +372,7 @@ document.addEventListener('click', (event) => {
     height: 87px;
     background: linear-gradient(to right, #060609 50%, #410A2E);
     border-radius: 10px 10px 28px 10px;
+    outline: solid 1px #0C0C11;
 }
 
 hr {
@@ -382,6 +385,7 @@ hr {
     width: 100%;
     height: 100%;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
     gap: 14px;
@@ -452,7 +456,7 @@ hr {
 #options {
     position: absolute;
     left: 1px;
-    z-index: 0;
+    z-index: 1;
     background: #000;
     outline: solid 0.0625em #111118;
     border-radius: 0px 0.5em 0.5em 0.5em;
@@ -478,13 +482,13 @@ hr {
 .options-showed {
     pointer-events: auto;
 
-    animation: show-options 0.5s ease-in-out forwards;
+    animation: show-options 0.3s ease-in forwards;
 }
 
 .options-hidden {
     pointer-events: none;
 
-    animation: hide-options 0.5s ease-in-out forwards;
+    animation: hide-options 0.3s ease-in forwards;
 }
 
 /* animation 'show-options' for options container */
@@ -604,7 +608,14 @@ hr {
 
 
 #content-more {
+    position: relative;
     width: 100%;
     height: 100%;
+    background: #060609;
+    outline: solid 1px #0C0C11;
+    display: flex;
+    box-sizing: border-box;
+    padding: 15px 19px;
+    border-radius: 12px;
 }
 </style>

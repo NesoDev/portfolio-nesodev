@@ -17,7 +17,7 @@ onMounted(() => {
 <style>
 .background-black {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background: black;
@@ -26,7 +26,7 @@ onMounted(() => {
 @media (width < 480px) {
   .background-gradient {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, #620743 0%, #000000 8%);

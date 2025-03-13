@@ -17,6 +17,8 @@ onBeforeMount(() => {
 
 <style scoped>
 #app-vue {
+  position: absolute;
+  z-index: -2;
   margin: 0;
   padding: 0;
   width: 100%;
