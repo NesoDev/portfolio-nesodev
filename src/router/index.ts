@@ -47,7 +47,7 @@ const routes: Array<RouteRecordRaw> = [
             path: 'games',
             name: 'games',
             component: GamesView
-          }
+          },
         ]
       },
       {
@@ -64,7 +64,7 @@ const routes: Array<RouteRecordRaw> = [
         path: 'certificates',
         name: 'certificates',
         component: CertificatesView
-      }
+      },
     ]
   }
 ]

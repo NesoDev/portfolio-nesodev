@@ -1,6 +1,19 @@
 <template>
-    <div class="certificates">
-      <h1>This is an certificates page</h1>
-    </div>
+  <div class="certificates">
+    <UnderConstruction/>
+  </div>
 </template>
-  
+
+<script setup>
+import UnderConstruction from '@/components/UnderConstruction.vue';
+</script>
+
+<style scoped>
+.certificates {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+</style>

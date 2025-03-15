@@ -88,7 +88,7 @@
 </template>
 
 <script setup>
-import Background from '@/components/BackgroundComponent.vue';
+import Background from '@/components/BackgroundApp.vue';
 </script>
 
 
