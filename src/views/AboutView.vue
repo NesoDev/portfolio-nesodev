@@ -7,7 +7,7 @@
             </div>
             <div id="profile">
                 <p ref="pRef">A Peruvian 🇵🇪 software engineering student with two years of experience working on
-                    freelance projects.</p>
+                    freelance projects. </p>
                 <div id="avatar">
                     <div>
                         <img src="../assets/profile.gif" alt="">
@@ -25,12 +25,12 @@
                         <p>More me</p>
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L4.29289 4.29289C4.68342 4.68342 5.31658 4.68342 5.70711 4.29289L9 1"
-                                stroke="black" stroke-width="2" stroke-linecap="round" />
+                                stroke="#797D9E" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </button>
                     <div id="options" ref="optsRef">
-                        <router-link to="/about/started" class="link-nav" @click="handleDropDown"
-                            :class="{ 'active': $route.path === '/about/started' }">
+                        <router-link to="/about/resume" class="link-nav" @click="handleDropDown"
+                            :class="{ 'active': $route.path === '/about/resume' }">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="14" height="14" fill="url(#pattern0_13_115)" />
@@ -43,7 +43,7 @@
                                         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABxUlEQVR4nO2dvU7DMBRGLwxIPGBewN+D+G50QUIICR4QBBOwMBtF7daWoY37keQcKUuH2s2JfX8U1REAAAAAAAAwD2qt1xFx5Z7H6hiG+9tS6lMp9VvKxpXjPXiT6mYY6k13AVJ94KbnkQevbroLKKV+ICCPrfz37gK4+fnntosAeeMSAoSAiz4xMj2xi1kBYZ7P1OOe+3tOHhgBiQCxAtiCgi0oiQEE4Y4QhLeQBe0gDSUNbdQBohCjEBOFWKMQoxBr0ZtLNbU0k2bev2nGTf19QgACxApItiC2oCQGiCBMEBZZUJKGkoYmdYAoxCjERCWctCJoRSS9INGMoxknuqHnsZh29FzbyTHxuOf+npMHRkAiQKwAtqBgC0piAEG4IwThLWRBO0hDSUMbdYAoxCjERCHWKMQoxFr0hjR0YWmoFnYhQAiwP4ViBaz1qq9sQfIJKCXvEKDF/23l4Ul0Hxi2IMAMAswgwAwCzCDADALMIMAMAswgwAwCzCDADALMIMAMAswgwAwCzCDADALMIMAMAsxI+bX/Okb9dM9rNYwnqR54IenRPa+1HWf7Ukr+jJeUz+Nn7nmtkfEwZw50BgAAgJglv2NOSkmon4ZWAAAAAElFTkSuQmCC" />
                                 </defs>
                             </svg>
-                            <p>How is started</p>
+                            <p>Resume</p>
                         </router-link>
                         <hr>
                         <router-link to="/about/education" class="link-nav" @click="handleDropDown"
@@ -228,8 +228,10 @@ document.addEventListener('click', (event) => {
     /*box-shadow: inset 0 0 0 1px yellow;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    gap: 15px;
 }
 
 #greeting {
@@ -254,7 +256,7 @@ document.addEventListener('click', (event) => {
     font-family: "M PLUS 2", sans-serif;
     font-weight: bold;
     font-size: 28px;
-    color: #BCBCBC;
+    color: #f5f5f5;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -345,7 +347,7 @@ document.addEventListener('click', (event) => {
 
 #avatar div {
     position: relative;
-    width: calc(100% - 12px);
+    width: calc(100% - 42px);
     height: calc(100% - 12px);
     overflow: hidden;
     display: flex;
@@ -370,14 +372,17 @@ document.addEventListener('click', (event) => {
 #background {
     width: 100%;
     height: 87px;
-    background: linear-gradient(to right, #060609 50%, #410A2E);
+    background: linear-gradient(to right, #000000, #060609 50%, #550037);
     border-radius: 10px 10px 28px 10px;
-    outline: solid 1px #0C0C11;
+    outline: solid 1px #0c0c11;
 }
 
 hr {
     width: 100%;
-    border: solid 1px #0C0C11;
+    background: #0c0c11;
+    height: 2px;
+    border-radius: 2px;
+    border: none;
 }
 
 /* ////////////////////////// Sección "More me" ////////////////////////// */
@@ -386,6 +391,7 @@ hr {
     height: 100%;
     display: flex;
     box-sizing: border-box;
+    padding: 0px 15px;
     flex-direction: column;
     justify-content: space-between;
     gap: 14px;
@@ -414,10 +420,11 @@ hr {
 #btn-more-me {
     all: unset;
     width: auto;
-    height: 100%;
-    background: #636380;
+    height: 30px;
+    background: #100f19;
     font-weight: bold;
-    color: #000;
+    font-size: 13px;
+    color: #797D9E;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -425,7 +432,7 @@ hr {
     gap: 8px;
     box-sizing: border-box;
     padding: 0px 9px 0px 9px;
-    transition: background 0.4s ease, border-radius 0.7s ease;
+    transition: background 0.3s ease-out, border-radius 0.7s ease;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
@@ -434,8 +441,14 @@ hr {
 .btn-more-selected {
     border-radius: 8px 8px 0 0 !important;
     /* Fuerza esquinas superiores redondeadas */
-    background: #A4A9D2 !important;
+    background: #f5f5f5 !important;
     /* Color cuando está activo */
+}
+.btn-more-selected p {
+    color: #000
+}
+.btn-more-selected svg path {
+    stroke: #000;
 }
 
 /* Estado cuando el menú está CERRADO */
@@ -450,7 +463,13 @@ hr {
 
 #btn-more-me:hover,
 .btn-selected {
-    background: #A4A9D2;
+    background: #f5f5f5;
+}
+#btn-more-me:hover p {
+    color: #000
+}
+#btn-more-me:hover svg path {
+    stroke: #000
 }
 
 #options {
@@ -536,7 +555,7 @@ hr {
 
 #options a:hover,
 .link-nav.active {
-    background: #0C0C11;
+    background: #100f19;
     border-radius: 4px;
 }
 
@@ -545,7 +564,8 @@ hr {
 }
 
 #options hr {
-    color: #111118;
+    height: 1px;
+    background: #15151e;
 }
 
 #tags {
@@ -567,7 +587,7 @@ hr {
     font-size: 13px;
     font-weight: normal;
     border: none;
-    transition: background 0.4s ease, ;
+    transition: background 0.3s ease-out, ;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
@@ -585,9 +605,7 @@ hr {
 .tag {
     height: 100%;
     width: auto;
-    background: #0C0C11;
-    color: #797D9E;
-    font-weight: normal;
+    background: #100f19;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -600,10 +618,18 @@ hr {
 
 .tag p {
     margin-bottom: 3px;
+    color: #797D9E;
+    font-weight: bold;
 }
 
 #btn-cv:hover {
-    background: #161620;
+    background: #f5f5f5;
+}
+#btn-cv:hover p {
+    color: #000
+}
+#btn-cv:hover svg path {
+    stroke: #000
 }
 
 
@@ -611,11 +637,11 @@ hr {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #060609;
-    outline: solid 1px #0C0C11;
+    background:  #040407;
     display: flex;
     box-sizing: border-box;
     padding: 15px 19px;
     border-radius: 12px;
+    outline: solid 1px #0c0c11;
 }
 </style>

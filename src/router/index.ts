@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
-import StartedView from '@/views/AboutViews/StartedView.vue'
+import ResumeView from '@/views/AboutViews/ResumeView.vue'
 import MoviesSeriesView from '@/views/AboutViews/MoviesSeriesView.vue'
 import MusicsView from '@/views/AboutViews/MusicsView.vue'
 import GamesView from '@/views/AboutViews/GamesView.vue'
@@ -21,12 +21,12 @@ const routes: Array<RouteRecordRaw> = [
         path: 'about',
         name: 'about',
         component: AboutView,
-        redirect: { name: 'started' },
+        redirect: { name: 'resume' },
         children: [
           {
-            path: 'started',
-            name: 'started',
-            component: StartedView
+            path: 'resume',
+            name: 'resume',
+            component: ResumeView
           },
           {
             path: 'education',

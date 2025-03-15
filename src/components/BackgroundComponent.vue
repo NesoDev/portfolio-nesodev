@@ -1,5 +1,5 @@
 <template>
-  <div :class="hasGradient ? 'background-gradient' : 'background-black'"></div>
+  <div id="background" :class="hasGradient ? 'background-gradient' : 'background-black'"></div>
 </template>
 
 <script setup>
@@ -15,22 +15,21 @@ onMounted(() => {
 </script>
 
 <style>
-.background-black {
-  position: absolute;
-  z-index: -1;
+
+#background {
   width: 100%;
   height: 100%;
+  background: #000;
+}
+
+.background-black {
   background: black;
 }
 
 @media (width < 480px) {
   .background-gradient {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
     /*background: linear-gradient(to bottom, #620743 0%, #000000 8%);*/
-    background: #000;
+    background: #000000;
   }
 }
 </style>
