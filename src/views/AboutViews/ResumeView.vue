@@ -36,7 +36,7 @@
     min-height: 100%;
     width: 100%;
     font-family: 'Fira Code', sans-serif;
-    color: #636380
+    color: #8d90a5
 }
 
 h3 {

@@ -191,7 +191,7 @@ import Background from '@/components/BackgroundComponent.vue';
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   list-style: none;
 }
 

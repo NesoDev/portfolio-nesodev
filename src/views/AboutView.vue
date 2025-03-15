@@ -332,7 +332,7 @@ document.addEventListener('click', (event) => {
     font-family: "Fira Code", sans-serif;
     font-weight: lighter;
     font-size: 11px;
-    color: #636380;
+    color: #8d90a5;
     line-height: 1.8
 }
 
@@ -372,9 +372,9 @@ document.addEventListener('click', (event) => {
 #background {
     width: 100%;
     height: 87px;
-    background: linear-gradient(to right, #000000, #060609 50%, #550037);
+    background: linear-gradient(to right, #000000 50%, #550037);
     border-radius: 10px 10px 28px 10px;
-    outline: solid 1px #0c0c11;
+    outline: solid 1px #1a1925;
 }
 
 hr {
@@ -637,11 +637,11 @@ hr {
     position: relative;
     width: 100%;
     height: 100%;
-    background:  #040407;
+    background:  #000;
     display: flex;
     box-sizing: border-box;
     padding: 15px 19px;
     border-radius: 12px;
-    outline: solid 1px #0c0c11;
+    outline: solid 1px #1a1925;
 }
 </style>
