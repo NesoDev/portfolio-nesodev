@@ -196,11 +196,11 @@ svg {
 }
 
 .body-showed {
-    animation: show-body 0.3s ease-in forwards;
+    animation: show-body 0.2s ease-in forwards;
 }
 
 .body-hidden {
-    animation: hide-body 0.3s ease-in forwards;
+    animation: hide-body 0.2s ease-in forwards;
 }
 
 @keyframes show-body {
