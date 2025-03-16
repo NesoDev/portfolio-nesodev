@@ -22,7 +22,7 @@
                 <div id="dropdown-more-me" ref="dropdownRef">
                     <button id="btn-more-me" :class="openedDropdown ? 'btn-more-selected' : 'btn-more-deselected'"
                         @click="handleDropDown">
-                        <p>More me</p>
+                        <p>More of me</p>
                         <svg :class="{ rotated: openedDropdown }"  width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L4.29289 4.29289C4.68342 4.68342 5.31658 4.68342 5.70711 4.29289L9 1"
                                 stroke="#797D9E" stroke-width="2" stroke-linecap="round" />
