@@ -10,10 +10,13 @@
 import ToolDropdown from '@/components/ToolsComponents/ToolDropdown.vue';
 
 const loadImages = (context) => {
-  return [...context.keys().map((key) => ({
-    name: key.replace(/^.*[\\/]/, '').replace('.png', ''),
-    url: context(key),
-  }))];
+  return [...context.keys()
+    .map((key) => ({
+      name: key.replace(/^.*[\\/]/, '').replace('.png', ''),
+      url: context(key),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+  ];
 };
 
 const languages_Images = loadImages(require.context('@/assets/tools/languages', false, /\.png$/));
@@ -55,7 +58,7 @@ console.log(tools);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 10px
+    gap: 30px
 }
 
 .box {
