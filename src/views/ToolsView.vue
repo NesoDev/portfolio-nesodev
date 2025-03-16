@@ -1,19 +1,66 @@
 <template>
   <div class="tools">
-    <UnderConstruction />
+    <div id="content">
+      <ToolDropdown v-for="(tool, i) in tools" :key="i" :title="tool.title" :items="tool.items"/>
+    </div>
   </div>
 </template>
 
 <script setup>
-import UnderConstruction from '@/components/UnderConstruction.vue';
+import ToolDropdown from '@/components/ToolsComponents/ToolDropdown.vue';
+
+const loadImages = (context) => {
+  return [...context.keys().map((key) => ({
+    name: key.replace(/^.*[\\/]/, '').replace('.png', ''),
+    url: context(key),
+  }))];
+};
+
+const languages_Images = loadImages(require.context('@/assets/tools/languages', false, /\.png$/));
+const libsFrameworks_Images = loadImages(require.context('@/assets/tools/libs-frameworks', false, /\.png$/));
+const dbs_Images = loadImages(require.context('@/assets/tools/db', false, /\.png$/));
+const cloudCDCI_Images = loadImages(require.context('@/assets/tools/cloud-cd_ci', false, /\.png$/));
+const iot_Images = loadImages(require.context('@/assets/tools/iot', false, /\.png$/));
+const noCodeLowCode_Images = loadImages(require.context('@/assets/tools/no_code-low_code', false, /\.png$/));
+
+const tools = [
+  { title: "Languages", items: [...languages_Images] },
+  { title: "Libs/Frameworks", items: [...libsFrameworks_Images] },
+  { title: "Databases", items: [...dbs_Images] },
+  { title: "Cloud & CI/CD", items: [...cloudCDCI_Images] },
+  { title: "IoT", items: [...iot_Images] },
+  { title: "NoCode / LowCode", items: [...noCodeLowCode_Images] },
+];
+
+console.log(tools);
+
 </script>
 
 <style scoped>
 .tools {
-  width: 100%;
+  position: relative;
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#content {
+    position: absolute;
+    height: auto;
+    width: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+
+.box {
+  width: 100%;
+  height: 64px;
+  box-shadow: inset 0px 0px 0px 1px #fff;
 }
 </style>

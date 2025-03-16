@@ -1,6 +1,6 @@
 <template>
   <div class="certificates">
-    <UnderConstruction/>
+    <UnderConstruction />
   </div>
 </template>
 
@@ -10,10 +10,10 @@ import UnderConstruction from '@/components/UnderConstruction.vue';
 
 <style scoped>
 .certificates {
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

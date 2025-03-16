@@ -211,7 +211,6 @@ document.addEventListener('click', (event) => {
 .about {
     width: 100%;
     height: 100%;
-    /*box-shadow: inset 0 0 0 1px #fff;*/
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -474,7 +473,7 @@ hr {
 
 #options {
     position: absolute;
-    left: 1px;
+    left: 0px;
     z-index: 1;
     background: #000;
     outline: solid 0.0625em #111118;

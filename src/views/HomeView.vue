@@ -114,7 +114,7 @@ import Background from '@/components/BackgroundApp.vue';
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 /* ////////////////////////// Cabecera ////////////////////////// */
@@ -183,10 +183,11 @@ import Background from '@/components/BackgroundApp.vue';
 
 /* ///////////// Barra inferior ///////////// */
 #header-bottom {
-  width: 100dvw;
+  width: calc(100dvw - 20px);
   height: 45px;
   /*background: #100f19;*/
   background: #100f19;
+  border-radius: 4px;
   display: flex;
   flex-direction: row;
   justify-content: center;
