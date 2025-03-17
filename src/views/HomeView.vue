@@ -186,7 +186,7 @@ import Background from '@/components/BackgroundApp.vue';
   width: calc(100dvw - 20px);
   height: 45px;
   /*background: #100f19;*/
-  background: #100f19;
+  background: #0C0C11;
   border-radius: 4px;
   display: flex;
   flex-direction: row;

@@ -1,13 +1,16 @@
 <template>
   <div class="tools">
     <div id="content">
-      <ToolDropdown v-for="(tool, i) in tools" :key="i" :title="tool.title" :items="tool.items"/>
+      <DropdownItems v-for="(tool, i) in tools" :key="i" :title="tool.title" :component="ToolItem" :items="tool.items"/>
     </div>
   </div>
 </template>
 
 <script setup>
-import ToolDropdown from '@/components/ToolsComponents/ToolDropdown.vue';
+import DropdownItems from '@/components/DropdownItems.vue';
+import ToolItem from '@/components/ToolItem.vue';
+
+console.log(`toolitem: ${JSON.stringify(ToolItem)}`);
 
 const loadImages = (context) => {
   return [...context.keys()

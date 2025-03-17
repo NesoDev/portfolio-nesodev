@@ -1,5 +1,5 @@
 <template>
-    <div class="tool-dropdown" ref="dropdownRef" :style="{ '--height-max': bodyH + 'px' }">
+    <div class="dropdown-items" ref="dropdownRef" :style="{ '--height-max': bodyH + 'px' }">
         <div id="head">
             <div>
                 <h3>{{ props.title }}</h3>
@@ -15,13 +15,13 @@
             </button>
         </div>
         <div id="body" ref="bodyRef">
-            <img v-for="(item, i) in props.items" :key="i" :src="item.url" :name="item.name">
+            <component :is="props.component" :items="props.items"></component>
         </div>
     </div>
 </template>
 
 <script setup>
-import { defineProps, ref, watch, onMounted, onUnmounted } from 'vue';
+import { defineProps, defineComponent, ref, watch, onMounted, onUnmounted, onBeforeMount, resolveComponent } from 'vue';
 
 const openedDropdown = ref(false);
 const dropdownRef = ref(null);
@@ -51,6 +51,7 @@ onMounted(() => {
             observer.unobserve(bodyRef.value);
         }
     });
+    console.log("dropdownitems builded")
 });
 
 watch(bodyRef, (newValue) => {
@@ -79,22 +80,30 @@ const props = defineProps({
         type: String,
         required: true
     },
+    component: {
+        type: Object,
+        required: true
+    },
     items: {
         type: Array,
         required: true
     }
 });
+
+onBeforeMount(() => {
+    console.log(`props.items: ${JSON.stringify(props.items)}`)
+})
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap');
 
-.tool-dropdown {
+.dropdown-items {
     position: relative;
     width: 100%;
     height: 60px;
     border: solid 1px #1a1925;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     transition: height 0.3s ease
 }
@@ -118,6 +127,11 @@ const props = defineProps({
     padding: 0px 15px;
     box-sizing: border-box;
     font-family: "M PLUS 2", sans-serif;
+    transition: background 0.15s ease;
+}
+
+#head:hover {
+    background: #060609;
 }
 
 #head div {
@@ -130,13 +144,13 @@ const props = defineProps({
 
 #head h3 {
     font-size: 13px;
-    color: #797D9E;
+    color: #8d90a5
 }
 
 #head div p {
     font-weight: bold;
     font-size: 13px;
-    color: #797D9E;
+    color: #8d90a5
 }
 
 #head button {
@@ -163,6 +177,10 @@ const props = defineProps({
     background: #f5f5f5;
 }
 
+#head:has(button:hover) {
+    background: #060609;
+}
+
 #head button:hover svg path {
     stroke: #000;
 }
@@ -181,18 +199,13 @@ svg {
 
 #body {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-    box-sizing: border-box;
+    height: auto;
     border-top: solid 1px #1a1925;
 }
 
 #body img {
     height: 20px;
+    filter: brightness(0.9);
 }
 
 .body-showed {
