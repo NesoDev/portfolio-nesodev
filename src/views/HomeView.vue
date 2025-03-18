@@ -193,11 +193,11 @@ import Background from '@/components/BackgroundApp.vue';
 
 /* ///////////// Barra inferior ///////////// */
 #header-bottom {
-  width: calc(100dvw - 30px);
+  width: calc(100dvw - 0px);
   height: 45px;
   /*background: #100f19;*/
   background: linear-gradient(to left, var(--bg-nav-0), var(--bg-nav-1));
-  border-radius: 4px;
+  border-radius: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
