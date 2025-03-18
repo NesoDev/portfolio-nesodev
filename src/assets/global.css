@@ -1,0 +1,19 @@
+:root {
+    --bg-color: #040303;
+    --bg-nav-0: #FF004D;
+    --bg-nav-1: #FF004D;
+    --bg-card-0: #000000;
+    --bg-card-2: #2d0047;
+    --bg-card-1: #2d0047;
+    --col-border-card: #1d1d22;
+    --col-text-nav-active: #f5f5f5;
+    --col-text-nav-deactive: #000;
+    --col-text-about-0: #f5f5f5;
+    --col-text-about-1: #636380;
+    --col-hr-0: #121215;
+    --col-text-about-2: #8d90a5;
+    --col-text-btn-about: #797d9e;
+    --col-text-btn-about-hover: #000;
+    --bg-btn-about: #100f19;
+    --bg-btn-about-hover: #f5f5f5;
+}

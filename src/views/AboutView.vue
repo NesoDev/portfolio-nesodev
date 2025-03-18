@@ -222,14 +222,12 @@ document.addEventListener('click', (event) => {
 /* ////////////////////////// Sección "Presentation" ////////////////////////// */
 #presentation {
     position: relative;
-    width: 100%;
+    width: calc(100% - 30px);
     height: auto;
-    /*box-shadow: inset 0 0 0 1px yellow;*/
+    /*box-shadow: inset 0 0 0 1px rgb(255, 255, 255);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-sizing: border-box;
-    padding: 0px 15px;
     gap: 15px;
 }
 
@@ -248,16 +246,16 @@ document.addEventListener('click', (event) => {
     font-family: "M PLUS 2", sans-serif;
     font-weight: bold;
     font-size: 28px;
-    color: #636380;
+    color: var(--col-text-about-1);
 }
 
 #greeting h1 {
     font-family: "M PLUS 2", sans-serif;
     font-weight: bold;
     font-size: 28px;
-    color: #f5f5f5;
+    color: var(--col-text-about-0);
     display: flex;
-    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 @media (min-width: 320px) {
@@ -305,7 +303,7 @@ document.addEventListener('click', (event) => {
     bottom: 0;
     height: 100%;
     width: 100%;
-    /*box-shadow: inset 0 0 0 1px rgb(0, 255, 119);*/
+    /*box-shadow: inset 0 0 0 1px rgb(72, 255, 0);*/
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -326,28 +324,31 @@ document.addEventListener('click', (event) => {
     bottom: 12px;
     height: auto;
     width: 100%;
-    min-width: 230px;
     /*box-shadow: inset 0 0 0 1px rgb(247, 0, 255);*/
-    font-family: "Fira Code", sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-weight: lighter;
-    font-size: 11px;
-    color: #8d90a5;
+    font-size: 12px;
+    color: var(--col-text-about-2);
     line-height: 1.8
 }
 
 #profile #avatar {
     height: 100%;
-    width: 100%;
-    /*box-shadow: inset 0 0 0 1px #c3ff10;*/
+    width: auto;
+    /*box-shadow: inset 0 0 0 1px #ff107c;*/
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: end;
+    align-items: end;
+    padding: 0px 15px 15px 0px;
+    box-sizing: border-box;
 }
 
 #avatar div {
     position: relative;
-    width: calc(100% - 42px);
-    height: calc(100% - 12px);
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    /*outline: solid 1px #fff;*/
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -356,29 +357,34 @@ document.addEventListener('click', (event) => {
 }
 
 #avatar div img {
-    position: absolute;
-    top: 0px;
     height: 100%;
+    width: auto;
 }
 
-/* Media query para desktop (por ejemplo, pantallas de 1024px en adelante) */
-@media (min-width: 1024px) {
-    #avatar div img {
-        width: 100%
+/* Media query para tablet (por ejemplo, pantallas de 768px en adelante) */
+@media (width > 518px) {
+    #avatar {
+        max-width: calc(100% - 280px);
+    }
+}
+
+@media (width <= 518px) {
+    #avatar {
+        max-width: 30%;
     }
 }
 
 #background {
     width: 100%;
     height: 87px;
-    background: linear-gradient(to right, #000000 50%, #550037);
+    background: linear-gradient(to right, var(--bg-card-0) 65%, var(--bg-card-1) 80%, var(--bg-card-2));
     border-radius: 10px 10px 28px 10px;
-    outline: solid 1px #1a1925;
+    outline: solid 1px var(--col-border-card);
 }
 
 hr {
     width: 100%;
-    background: #0c0c11;
+    background: var(--col-hr-0);
     height: 2px;
     border-radius: 2px;
     border: none;
@@ -420,10 +426,10 @@ hr {
     all: unset;
     width: auto;
     height: 30px;
-    background: #100f19;
+    background: var(--bg-btn-about);
     font-weight: bold;
     font-size: 13px;
-    color: #797D9E;
+    color: var(--col-text-btn-about);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -440,11 +446,11 @@ hr {
 .btn-more-selected {
     border-radius: 8px 8px 0 0 !important;
     /* Fuerza esquinas superiores redondeadas */
-    background: #f5f5f5 !important;
+    background: var(--bg-btn-about-hover) !important;
     /* Color cuando está activo */
 }
 .btn-more-selected p {
-    color: #000
+    color: var(--col-text-btn-about-hover)
 }
 .btn-more-selected svg path {
     stroke: #000;
@@ -452,6 +458,9 @@ hr {
 
 #btn-more-me svg {
     transition: transform 0.3s ease;
+}
+#btn-more-me svg path {
+    stroke: var(--col-text-btn-about)
 }
 
 .rotated {
@@ -470,13 +479,13 @@ hr {
 
 #btn-more-me:hover,
 .btn-selected {
-    background: #f5f5f5;
+    background: var(--bg-btn-about-hover);
 }
 #btn-more-me:hover p {
-    color: #000
+    color: var(--col-text-btn-about-hover)
 }
 #btn-more-me:hover svg path {
-    stroke: #000
+    stroke: var(--col-text-btn-about-hover)
 }
 
 #options {
@@ -605,6 +614,7 @@ hr {
 }
 
 #btn-cv svg path {
+    stroke: var(--col-text-btn-about);
     transition: stroke 0.4s ease;
     -webkit-tap-highlight-color: transparent;
 }
@@ -612,7 +622,7 @@ hr {
 .tag {
     height: 100%;
     width: auto;
-    background: #100f19;
+    background: var(--bg-btn-about);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -625,12 +635,12 @@ hr {
 
 .tag p {
     margin-bottom: 3px;
-    color: #797D9E;
+    color: var(--col-text-btn-about);
     font-weight: bold;
 }
 
 #btn-cv:hover {
-    background: #f5f5f5;
+    background: var(--bg-btn-about-hover);
 }
 #btn-cv:hover p {
     color: #000
@@ -644,11 +654,11 @@ hr {
     position: relative;
     width: 100%;
     height: 100%;
-    background:  #000;
+    background: var(--bg-card-0);
     display: flex;
     box-sizing: border-box;
-    padding: 15px 19px;
+    padding: 15px 12px;
     border-radius: 12px;
-    outline: solid 1px #1a1925;
+    outline: solid 1px var(--col-border-card);
 }
 </style>

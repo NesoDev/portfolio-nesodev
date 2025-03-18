@@ -1,5 +1,5 @@
 <template>
-    <div class="tool-item">
+    <div class="tool-list">
         <img v-for="(item, i) in props.items" :key="i" :src="item.url" :name="item.name">
     </div>
 </template>
@@ -14,12 +14,12 @@ const props = defineProps({
 });
 console.log("hola")
 onBeforeMount(() => {
-    console.log(`tool-item items: ${JSON.stringify(props.items)}`)
+    console.log(`tool-list items: ${JSON.stringify(props.items)}`)
 })
 </script>
 
 <style scoped>
-.tool-item {
+.tool-list {
     width: 100%;
     height: auto;
     display: flex;

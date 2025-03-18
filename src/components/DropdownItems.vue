@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { defineProps, defineComponent, ref, watch, onMounted, onUnmounted, onBeforeMount, resolveComponent } from 'vue';
+import { defineProps, ref, watch, onMounted, onUnmounted, onBeforeMount } from 'vue';
 
 const openedDropdown = ref(false);
 const dropdownRef = ref(null);
@@ -102,7 +102,7 @@ onBeforeMount(() => {
     position: relative;
     width: 100%;
     height: 60px;
-    border: solid 1px #1a1925;
+    border: solid 1px var(--col-border-card);
     border-radius: 16px;
     overflow: hidden;
     transition: height 0.3s ease
@@ -119,7 +119,7 @@ onBeforeMount(() => {
 #head {
     width: 100%;
     height: 60px;
-    background: #000;
+    background: #030307;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -131,7 +131,7 @@ onBeforeMount(() => {
 }
 
 #head:hover {
-    background: #060609;
+    background: #07070a;
 }
 
 #head div {

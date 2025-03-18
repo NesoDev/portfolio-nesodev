@@ -36,17 +36,17 @@
     min-height: 100%;
     width: 100%;
     font-family: 'Fira Code', sans-serif;
-    color: #8d90a5
+    color: var(--col-text-about-2)
 }
 
 h3 {
     font-size: 13px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: lighter;
     line-height: 1.8
 }
