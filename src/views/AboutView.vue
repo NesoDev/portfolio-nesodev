@@ -327,14 +327,14 @@ document.addEventListener('click', (event) => {
     /*box-shadow: inset 0 0 0 1px rgb(247, 0, 255);*/
     font-family: 'Fira Code', sans-serif;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 11px;
     color: var(--col-text-about-2);
     line-height: 1.8
 }
 
 #profile #avatar {
     height: 100%;
-    width: auto;
+    width: 100%;
     /*box-shadow: inset 0 0 0 1px #ff107c;*/
     display: flex;
     justify-content: end;
@@ -343,10 +343,20 @@ document.addEventListener('click', (event) => {
     box-sizing: border-box;
 }
 
+@media (width > 518px) {
+    #avatar {
+        max-width: 45%;;
+    }
+}
+@media (width <= 518px) {
+    #avatar {
+        max-width: 30%;
+    }
+}
+
 #avatar div {
     position: relative;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     /*outline: solid 1px #fff;*/
     overflow: hidden;
@@ -356,24 +366,15 @@ document.addEventListener('click', (event) => {
     border-radius: 16px;
 }
 
+
 #avatar div img {
     height: 100%;
-    width: auto;
+    width: 100%;
+    object-fit: cover;
     filter: brightness(0.6);
 }
 
-/* Media query para tablet (por ejemplo, pantallas de 768px en adelante) */
-@media (width > 518px) {
-    #avatar {
-        max-width: calc(100% - 280px);
-    }
-}
 
-@media (width <= 518px) {
-    #avatar {
-        max-width: 30%;
-    }
-}
 
 #background {
     width: 100%;

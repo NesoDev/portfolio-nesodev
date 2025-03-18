@@ -46,7 +46,7 @@ h3 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: lighter;
     line-height: 1.8
 }
