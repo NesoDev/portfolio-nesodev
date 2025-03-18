@@ -359,6 +359,7 @@ document.addEventListener('click', (event) => {
 #avatar div img {
     height: 100%;
     width: auto;
+    filter: brightness(0.6);
 }
 
 /* Media query para tablet (por ejemplo, pantallas de 768px en adelante) */
